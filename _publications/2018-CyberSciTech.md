@@ -2,6 +2,8 @@
 title: "Table Analysis and Information Extraction for Medical Laboratory Reports(Accepted)"
 collection: publications
 permalink: /publication/2018-CyberSciTech
+excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+date: 2009-10-01
 venue: 'The 3rd IEEE Cyber Science Technology Congress'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 citation: 'Wenyuan Xue, Qingyong Li, et al. Table Analysis and Information Extraction for Medical Laboratory Reports. The 3rd IEEE Cyber Science Technology Congress, 2018.'
