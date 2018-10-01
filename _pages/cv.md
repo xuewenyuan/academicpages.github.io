@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-[Download English version of my CV](http://xuewenyuan.github.io/files/cv-en-wenyuan.pdf)
+[Download English version of my CV](http://xuewenyuan.github.io/files/cv-en-wenyuan.pdf)  
 [Download Chinese version of my CV](http://xuewenyuan.github.io/files/cv-cn-wenyuan.pdf)
 
 Education
