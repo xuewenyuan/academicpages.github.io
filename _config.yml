@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Wenyuan Xue"
+title                    : "Wenyuan's Page"
 title_separator          : "-"
 name                     : &name "Wenyuan Xue"
 description              : &description "personal description"
@@ -79,13 +79,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "Wenyuan"
-  avatar           : "profile.png"
-  bio              : ""
+  name             : "Wenyuan Xue"
+  avatar           : "bio-photo.jpg"
+  bio              : "PhD candidate"
   location         : "Beijing, China"
   employer         :
   googlescholar    : #"http://yourfullgooglescholarurl.com"
-  email            :
+  email            : xuewenyuan@bjtu.edu.cn
   uri              :
   bitbucket        :
   codepen          :
@@ -99,7 +99,7 @@ author:
   instagram        :
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -171,7 +171,7 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: False
     permalink: /:collection/:path/
   publications:
     output: true
@@ -180,7 +180,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: False
     permalink: /:collection/:path/
 
 
