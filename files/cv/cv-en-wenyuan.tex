@@ -1,0 +1,246 @@
+% Dr. Geoff Boeing - Curriculum Vitae
+% Copyright 2018 Geoff Boeing
+% Email: g.boeing@northeastern.edu
+% Web: https://geoffboeing.com/
+
+\documentclass[12pt,letterpaper]{report}
+
+\usepackage[T1]{fontenc} % output T1 font encoding (8-bit) so accented characters are a single glyph
+\usepackage[utf8]{inputenc} % allow input of utf-8 encoded characters
+\usepackage[strict,autostyle]{csquotes} % smart and nestable quote marks
+\usepackage[USenglish]{babel} % automatically regionalize hyphens, quote marks, etc
+\usepackage{microtype} % improves text appearance with kerning, etc
+\usepackage{datetime} % enable formatting of date output
+\usepackage{tabto} % make nice tabbing
+\usepackage{hyperref} % enable hyperlinks and pdf metadata
+\usepackage{geometry} % manually set page margins
+\usepackage{enumitem} % enumerate with [resume] option
+\usepackage{titlesec} % allow custom section fonts
+
+% what is your name?
+\newcommand{\myname}{Wenyuan Xue}
+
+% define a default font face and set it as the body font
+\usepackage{crimson} % document's serif font
+\usepackage{helvet}  % document's sans serif font
+
+% define how far to tab for list items with left-aligned date - different font faces need different widths
+\newcommand{\listtabwidth}{1.75cm}%1.75
+
+% set name font to title the document
+\newcommand{\namefont}[1]{{\normalfont\bfseries\Huge{#1}}}
+
+% set section heading fonts and before/after spacing
+\SetTracking{encoding=*}{20}
+\titleformat{\section}{\sffamily\small\bfseries\lsstyle\uppercase}{}{}{}{}
+\titlespacing{\section}{0pt}{24pt plus 4pt minus 2pt}{12pt plus 2pt minus 2pt}
+
+% set subsection heading fonts and before/after spacing
+\titleformat{\subsection}{\sffamily\footnotesize\bfseries}{}{}{}{}
+\titlespacing{\subsection}{0pt}{12pt plus 4pt minus 2pt}{8pt plus 2pt minus 2pt}
+
+% set page margins
+\geometry{body={6.5in, 9.0in},
+	left=1.0in,
+	top=1.0in}
+
+% prevent paragraph indentation
+\setlength\parindent{0em}
+
+% define space between list items
+\newcommand{\listitemspace}{0.15em}%0.15
+
+% make unordered lists without bullets and use compact spacing
+\newenvironment{desp}
+{\begin{list}{}{\setlength{\leftmargin}{0em}
+			\setlength{\parskip}{0em}
+			\setlength{\itemsep}{\listitemspace}
+			\setlength{\parsep}{\listitemspace}}}
+	{\end{list}}
+
+% make tabbed lists so content is left-aligned next to years
+\TabPositions{\listtabwidth}
+\newlist{tablist}{description}{3}
+\setlist[tablist]{leftmargin=\listtabwidth,
+	labelindent=0em,
+	topsep=0em,
+	partopsep=0em,
+	itemsep=\listitemspace,
+	parsep=\listitemspace,
+	font=\normalfont}
+
+% print the month and year only when using \today
+\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
+
+% define hyperlink appearance and metadata for pdf properties
+\hypersetup{
+	colorlinks = true,
+	urlcolor = black,
+	pdfauthor = {\myname},
+	pdfkeywords = {city planning, urban design, spatial data science, street networks, housing},
+	pdftitle = {\myname: Curriculum Vitae},
+	pdfsubject = {Curriculum Vitae},
+	pdfpagemode = UseNone
+}
+
+\begin{document}
+	\raggedright
+
+	% display name as the document title
+	\namefont{\myname}
+
+	% contact info
+	\vspace{1em}
+	\begin{minipage}[t]{0.6\textwidth}
+		School of Computer and Information Technology \\
+		Beijing Jiaotong University \\
+		Beijing, China
+	\end{minipage}
+	\begin{minipage}[t]{0.39\textwidth}
+		Email: wyxue17@bjtu.edu.cn \\
+		Page: \href{https://xuewenyuan.github.io}{https://xuewenyuan.github.io} \\
+		Phone: (+86) 158-0132-6281
+	\end{minipage}
+	\vspace{0.5em}
+
+  %\section*{Education}
+
+	\section*{Education}
+
+	\begin{tablist}
+
+		\item[Ph.D. Candidate] \tab Computer Science and Technology, Beijing Jiaotong University \\
+		\tab Beijing, China, 2015-Present
+
+		\item[B.S.] \tab \tab Software Engineering, Shanxi University, \\
+		\tab Taiyuan, China, 2011-2015
+
+	\end{tablist}
+
+
+
+	\section*{Research Experiences}
+
+	%\subsection*{OCR for Fiancial Documents}
+    %Invoice and Tickets
+  \begin{tablist}
+	  \item[2015-Present] \tab  Advisor: Professor Qingyong Li
+	\end{tablist}
+
+	\subsection*{Information Extraction from Images of Medical Laboratory Reports (Principal Investigator)}
+
+	\begin{desp}
+
+		\item Medical laboratory report is one kind of important clinical data, which can help doctors trace the patients’ condition and make a diagnosis. As the student leader of my group, \textit{I organized and participated in all stages of the project from data annotation to experimental design.}
+		\begin{itemize}
+			\item The text detector applies Faster RCNN with a patch-based strategy..
+			\item The recognizer uses a concatenation structure to combine two adjacent convolutional features.
+	  \end{itemize}
+		%The main contributions are:
+
+		%\begin{itemize}
+		%	\item An image dataset is available for public, which contains 357 document images for medical laboratory reports and complete annotations.
+		%	\item We have successfully applied for the funding from CERNET Innovation Project that mainly supports student projects.
+		%	\item Two conference papers have been published, and one journal paper is under review.
+		%\end{itemize}
+
+	\end{desp}
+
+  \subsection*{OCR for Financial Documents}
+	%invoices and all kinds of tickets for transportation
+	\begin{desp}
+
+		\item Audit work is tedious for the finance department, especially in big companies. The aim of this project is to help auditor input financial information from images of documents. This project is in progress and \textit{my work is to propose effective algorithmic solutions.}
+	\end{desp}
+
+	\subsection*{AI Based RFID Localization Technique for Automatic Dispatch System}
+
+	\begin{desp}
+
+		\item The receiver in the dispatch system can sniff several RFID signals from different products on the conveyor belt. The goal of the project is to arrange received signals by the order of products on the belt. \textit{I was responsible for the algorithm optimization to detect the landmark for a given signal.}
+		\begin{itemize}
+			\item A neural network is designed to regress the landmark position for a signal, which could be complex by traditional signal processing methods.
+	  \end{itemize}
+	\end{desp}
+
+	\begin{desp}
+
+		\item \emph{I also participated in other projects about object detection, signal recognition and so on.}
+
+	\end{desp}
+
+  \section*{Honors and Awards}
+
+  \begin{tablist}
+
+		\item[2018-Nov.] \tab The First Prize Scholarship for Doctoral Students, Beijing Jiaotong University
+
+		\item[2015-Dec.] \tab National Scholarship for Graduate Students, Beijing Jiaotong University
+
+		\item[2011-2015] \tab Outstanding Graduate, and scholarship, Shanxi University
+
+  \end{tablist}
+
+
+
+	\section*{Publications}
+
+  \subsection*{Conference}
+
+	\begin{tablist}
+
+		\item[2018] \tab W. Xue, Q. Li, Z. Zhang, Y. Zhao and H. Wang. \enquote{Table Analysis and Information Extraction for Medical Laboratory Reports.} \textit{IEEE Fourth International Conference on Cyber Science and Technology}, 2018, pp. 193-199.
+
+		\item[2018] \tab Y. Zhao, W. Xue and Q. Li. \enquote{A Multi-Scale CRNN Model for Chinese Papery Medical Document Recognition.} \textit{IEEE Fourth International Conference on Multimedia Big Data (BigMM)}, 2018, pp. 1-5.
+
+  \end{tablist}
+
+
+
+	\subsection*{Manuscripts in Preparation}
+
+	\begin{tablist}
+
+		\item[2018] \tab W. Xue, Q. Li and Q. Xue. \enquote{Textual Information Extraction from Images of Medical Laboratory Reports with Deep-Learning-Based Approach.} Submitted: \textit{International Journal of Medical Informatics} (Under Review), Fall 2018.
+
+		\item[2019] \tab W. Xue and Q. Li. \enquote{ReS$^2$TIM: Reconstruct Syntactic Structure from Table Images.} Target: \textit{International Conference on Document Analysis and Recognition}(Interface about the syntactic structure of table from images), Spring 2019.
+
+	\end{tablist}
+
+
+  \section*{Academic Services}
+
+	\begin{tablist}
+		\item[2018] \tab Reviewer of IEEE Wireless Communications and Networking Conference (IEEE WCNC 2019).
+	\end{tablist}
+
+	\section*{Skills and Methods}
+
+	%\begin{tablist}
+	 \subsection*{Computer Vision}
+	   \begin{desp}
+	     \item Digital image processing (OpenCV), object detection (RCNN series, YOLO series), text detection(TextBoxes, CTPN, EAST, R$^2$CNN, etc), text recognition(CRNN, ASTER, Attention based methods, etc)
+	   \end{desp}
+	 \subsection*{Programming}
+	   \begin{desp}
+       \item Python, C++
+	   \end{desp}
+  %\end{tablist}
+
+  \section*{Language}
+
+  \begin{tablist}
+    \item[English] \tab Fluent in reading and writing; moderate in speaking
+		\item[Chinese] \tab Native language
+	\end{tablist}
+
+	% display today's date as Month Year after a vertical space below the end of the text
+	\begin{center}
+		\vspace{6em}
+		%\vfill
+		%Updated \monthyeardate\today
+	\end{center}
+
+
+
+\end{document}
