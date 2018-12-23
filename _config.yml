@@ -85,14 +85,9 @@ author:
   bio              : "PhD candidate"
   location         : "Beijing, China"
   employer         :
-<<<<<<< HEAD
   googlescholar    : #"http://yourfullgooglescholarurl.com"
   email            : wyxue17@bjtu.edu.cn
-=======
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
->>>>>>> academicpages/master
   uri              :
   bitbucket        :
   codepen          :
