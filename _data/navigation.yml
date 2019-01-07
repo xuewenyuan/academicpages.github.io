@@ -6,6 +6,9 @@ main:
   #- title: "Portfolio"
   #  url: /portfolio/
 
+  - title: "Data Sets"
+    url: /datasets/
+
   - title: "Blog Posts"
     url: /year-archive/
 

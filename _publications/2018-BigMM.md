@@ -1,5 +1,5 @@
 ---
-title: "A Multi-Scale CRNN Model for Chinese Papery Medical Document Recognition(Accepted)"
+title: "A Multi-Scale CRNN Model for Chinese Papery Medical Document Recognition"
 collection: publications
 permalink: /publication/2018-BigMM
 excerpt: ''
