@@ -181,6 +181,9 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+  datasets:
+    output: true
+    permalink: /:collection/:path/
   talks:
     output: False
     permalink: /:collection/:path/
