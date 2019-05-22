@@ -8,11 +8,12 @@ redirect_from:
   - /about.html
 ---
 
-Thanks for your visiting. My name is Wenyuan Xue, a Ph.D student from Beijing Jiaotong University, China.
+Thanks for your visiting. My name is Wenyuan Xue, a Ph.D student from Beijing Jiaotong University, China. Now, I work at Tencent as an intern through the 2019 Rhino-Bird Elite Training Program.
 
 News
 ======
-**2018-12-23**: I posted a [note](https://xuewenyuan.github.io/posts/2018/12/blog-post-8/) for the article *Visual Relationship Detection with Deep Structural Ranking* on my Blog.
+**2019-5-21**: Our paper "*ReS2TIM: Reconstruct Syntactic Structures from Table Images*"(\#200) is accepted at [ICDAR2019](https://icdar2019.org/list-of-accepted-papers/). The camera ready copy will be available soon.
+**2019-4-5**: I have successfully applied for the 2019 Rhino-Bird Elite Training Program. In the next few months, I will continue my research at Tencent as an intern.
 
 My interests
 ======
